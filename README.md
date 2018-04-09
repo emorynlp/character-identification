@@ -21,6 +21,8 @@ The entity annotation is mostly crowdsourced although lots of them are fixed man
 
 ## Statistics
 
+For each season, episodes 1 ~ 19 are used for training (TRN), 20 ~ 21 for development (DEV), and 22 ~ rest for evaluation (TST).
+
 | Dataset | Episodes | Scenes | Utterances |  Tokens | Speakers | Mentions | Entities |
 |:-------:|---------:|-------:|-----------:|--------:|---------:|---------:|---------:|
 | TRN   | 76 | 987   | 18,789 | 262,650 | 265 | 36,385 | 628 |
@@ -30,36 +32,35 @@ The entity annotation is mostly crowdsourced although lots of them are fixed man
 
 ## Annotation
 
-Each utterance is split into sentences and all mentions in each sentence are annotated with their entities.
+Each utterance is split into sentences and personal mentions in each sentence are annotated with their entities.
+For the example below, the utterance consists of one sentence including four mentions.
+The first three mentions, *I*, **mom* and *dad*, are singular that refer to *Ross Geller*, *Judy Geller* and *Jack Geller*, respectively.
+The last mention, *they*, is plural that refers to both *Judy Geller* and *Jack Geller*.
 
 ```json
 {
-  "utterance_id": "s01_e01_c01_u002",
-  "speakers": ["Joey Tribbiani"],
-  "transcript": "C'mon, you're going out with the guy! There's gotta be something wrong with him!",
+  "utterance_id": "s01_e01_c01_u039",
+  "speakers": ["Ross Geller"],
+  "transcript": "I told mom and dad last night, they seemed to take it pretty well.",
   "tokens": [
-    ["C'mon", ",", "you", "'re", "going", "out", "with", "the", "guy", "!"],
-    ["There", "'s", "got", "ta", "be", "something", "wrong", "with", "him", "!"]
+    ["I", "told", "mom", "and", "dad", "last", "night", ",", "they", "seemed", "to", "take", "it", "pretty", "well", "."]
   ],
   "character_entities": [
-    [[2, 3, "Monica Geller"], [8, 9, "Paul the Wine Guy"]],
-    [[8, 9, "Paul the Wine Guy"]]
+    [[0, 1, "Ross Geller"], [2, 3, "Judy Geller"], [4, 5, "Jack Geller"], [8, 9, "Jack Geller", "Judy Geller"]]
   ]
 }
 ```
 
-For the above example, the utterance is split into two sentences.
-The first sentence, "*C'mon, you're going out with the guy!*", has two mentions, *you* and *guy*, that are linked to the entities *Monica Geller* and *Paul the Wine Guy*.
-The second sentence, "*There's gotta be something wrong with him!*", includes one mention, *him*, that is linked to the entity, *Paul the Wine Guy*.
-Each mention is annotated by the following format:
+Each mention is annotated by the following scheme:
 
 ```
-entity ::= [begin_index, end_index, entity_label]
-
-begin_index ::= the beginning token index of the mention (inclusive)
-end_index ::= the ending token index of the mention (exclusive)
-entity_label ::= the label of the entity
+[begin_index, end_index, entity(, entity)*]
 ```
+
+* `begin_index: int` - the beginning token index of the mention (inclusive).
+* `end_index: int` - the ending token index of the mention (exclusive).
+* `entity: str` - the label of the entity.
+
 
 ## References
 
