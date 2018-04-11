@@ -11,7 +11,7 @@ This task is a part of the [Character Mining](https://github.com/emorynlp/charac
 
 ## Dataset
 
-Given the transcripts provided by the [Character Mining](https://github.com/emorynlp/character-mining) project, all personal mentions are annotated with their global entities.
+Given the transcripts provided by the [Character Mining](../../../character-mining) project, all personal mentions are annotated with their global entities.
 For the above example, the first mention "I" is annotated with its global entity, *Ross Geller*, and the second mention "mom" is annotated with, *Judy Geller*, and so on.
 The mention detection is first performed automatically then corrected manually.
 The entity annotation is mostly crowdsourced although lots of them are fixed manually by experts.
@@ -32,7 +32,7 @@ For each season, episodes 1 ~ 19 are used for training (TRN), 20 ~ 21 for develo
 
 ## Annotation
 
-Each utterance is split into sentences and personal mentions in each sentence are annotated with their entities.
+Each utterance is split into sentences and personal mentions in every sentence are annotated with their entities.
 For the example below, the utterance consists of one sentence including four mentions.
 The first three mentions, *I*, **mom* and *dad*, are singular that refer to *Ross Geller*, *Judy Geller* and *Jack Geller*, respectively.
 The last mention, *they*, is plural that refers to both *Judy Geller* and *Jack Geller*.
@@ -69,7 +69,7 @@ Each mention is annotated by the following scheme:
 
 ## Shared Task
 
-* [SemEval 2018 Task 4: Character Identification on Multiparty Dialogues](https://github.com/emorynlp/semeval-2018-task4).
+* [SemEval 2018 Task 4: Character Identification on Multiparty Dialogues](../../../semeval-2018-task4).
 
 ## Contact
 
