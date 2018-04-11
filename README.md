@@ -7,11 +7,11 @@ For the following example, the mention "mom" is not one of the speakers; nonethe
 
 ![Character Identification Example](http://nlp.mathcs.emory.edu/character-mining/img/character-identification-example.png)
 
-This task is a part of the [Character Mining](https://github.com/emorynlp/character-mining) project led by the [Emory NLP](http://nlp.mathcs.emory.edu) research group.
+This task is a part of the [Character Mining](../../../character-mining) project led by the [Emory NLP](http://nlp.mathcs.emory.edu) research group.
 
 ## Dataset
 
-Given the transcripts provided by the [Character Mining](../../../character-mining) project, all personal mentions are annotated with their global entities.
+All personal mentions are annotated with their global entities.
 For the above example, the first mention "I" is annotated with its global entity, *Ross Geller*, and the second mention "mom" is annotated with, *Judy Geller*, and so on.
 The mention detection is first performed automatically then corrected manually.
 The entity annotation is mostly crowdsourced although lots of them are fixed manually by experts.
