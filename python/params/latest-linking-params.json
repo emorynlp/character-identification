@@ -1,0 +1,8 @@
+{
+  "number_of_filters": 280,
+  "number_of_epochs": 100,
+  "batch_size": 128,
+  "gpu_number": 1,
+  "gpu_settings": [],
+  "evaluate_only": false
+}
