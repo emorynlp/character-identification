@@ -16,8 +16,8 @@ For the above example, the first mention "I" is annotated with its global entity
 The mention detection is first performed automatically then corrected manually.
 The entity annotation is mostly crowdsourced although lots of them are fixed manually by experts.
 
-* Latest release: [v2.0](https://github.com/emorynlp/character-identification/releases).
-
+* Latest release: [v2.0](https://github.com/emorynlp/character-identification/archive/character-identification-2.0.tar.gz).
+* [Release notes](https://github.com/emorynlp/character-identification/releases).
 
 ## Statistics
 
