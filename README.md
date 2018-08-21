@@ -62,11 +62,14 @@ Each mention is annotated by the following scheme:
 * `entity: str` - the label of the entity.
 
 
+## Citatioin
+
+* [They Exist! Introducing Plural Mentions to Coreference Resolution and Entity Linking](http://aclweb.org/anthology/C18-1003). Ethan Zhou and Jinho D. Choi. In Proceedings of the 27th International Conference on Computational Linguistics, COLING'18, 2018 ([slides](https://www.slideshare.net/jchoi7s/they-exist-introducing-plural-mentions-to-coreference-resolution-and-entity-linking)). 
+
 ## References
 
-* [They Exist! Introducing Plural Mentions to Coreference Resolution and Entity Linking](http://aclweb.org/anthology/C18-1003). Ethan Zhou and Jinho D. Choi. In Proceedings of the 27th International Conference on Computational Linguistics, COLING'18, 24-34, Santa Fe, NM, 2018 ([slides](https://www.slideshare.net/jchoi7s/they-exist-introducing-plural-mentions-to-coreference-resolution-and-entity-linking)). 
-* [Robust Coreference Resolution and Entity Linking on Dialogues: Character Identification on TV Show Transcripts](http://www.aclweb.org/anthology/K17-1023), Henry Y. Chen, Ethan Zhou, and Jinho D. Choi. Proceedings of the 21st Conference on Computational Natural Language Learning, CoNLL'17, 216-225 Vancouver, Canada, 2017 ([slides](https://www.slideshare.net/jchoi7s/robust-coreference-resolution-and-entity-linking-on-dialogues-character-identification-on-tv-show-transcripts)).
-* [Character Identification on Multiparty Conversation: Identifying Mentions of Characters in TV Shows](http://www.aclweb.org/anthology/W16-3612), Henry Y. Chen and Jinho D. Choi. Proceedings of the 17th Annual SIGdial Meeting on Discourse and Dialogue, SIGDIAL'16, 90-100, Los Angeles, CA, 2016 ([poster](https://www.slideshare.net/jchoi7s/character-identification-on-multiparty-conversation-identifying-mentions-of-characters-in-tv-shows)).
+* [Robust Coreference Resolution and Entity Linking on Dialogues: Character Identification on TV Show Transcripts](http://www.aclweb.org/anthology/K17-1023), Henry Y. Chen, Ethan Zhou, and Jinho D. Choi. Proceedings of the 21st Conference on Computational Natural Language Learning, CoNLL'17, 2017 ([slides](https://www.slideshare.net/jchoi7s/robust-coreference-resolution-and-entity-linking-on-dialogues-character-identification-on-tv-show-transcripts)).
+* [Character Identification on Multiparty Conversation: Identifying Mentions of Characters in TV Shows](http://www.aclweb.org/anthology/W16-3612), Henry Y. Chen and Jinho D. Choi. Proceedings of the 17th Annual SIGdial Meeting on Discourse and Dialogue, SIGDIAL'16, 2016 ([poster](https://www.slideshare.net/jchoi7s/character-identification-on-multiparty-conversation-identifying-mentions-of-characters-in-tv-shows)).
 
 ## Shared Task
 
